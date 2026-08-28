@@ -72,7 +72,7 @@ export default function Landing() {
               <Camera className="size-5 text-primary" />
             </div>
             <span className="text-lg font-semibold tracking-tight">
-              FamilyPhotos
+              Family Drive Gallery
             </span>
           </div>
           <div className="flex items-center gap-3">
@@ -322,7 +322,7 @@ export default function Landing() {
         <div className="mx-auto max-w-5xl px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <Camera className="size-4 text-primary" />
-            <span className="text-sm font-medium">FamilyPhotos</span>
+            <span className="text-sm font-medium">Family Drive Gallery</span>
           </div>
           <p className="text-xs text-muted-foreground">
             Made with{" "}

@@ -86,7 +86,7 @@ export default function Dashboard() {
             </div>
             <div>
               <h1 className="text-lg font-semibold tracking-tight">
-                FamilyPhotos
+                Family Drive Gallery
               </h1>
               <p className="text-xs text-muted-foreground">
                 Welcome{user?.name ? `, ${user.name}` : ""}
@@ -130,7 +130,7 @@ export default function Dashboard() {
           </div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Heart className="size-4" />
-            <span>Family Album</span>
+            <span>Drive Gallery</span>
           </div>
         </div>
 

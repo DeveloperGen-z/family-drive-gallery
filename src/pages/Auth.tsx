@@ -131,7 +131,7 @@ function Auth({ redirectAfterAuth }: AuthProps = {}) {
                   </div>
                   <CardTitle className="text-xl">Welcome back</CardTitle>
                   <CardDescription>
-                    Sign in to view your family gallery
+                    Sign in to view your Family Drive Gallery
                   </CardDescription>
                 </CardHeader>
                 <form onSubmit={handleEmailSubmit}>
