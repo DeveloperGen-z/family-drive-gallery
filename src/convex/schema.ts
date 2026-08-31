@@ -32,12 +32,29 @@ const schema = defineSchema(
       role: v.optional(roleValidator), // role of the user. do not remove
     }).index("email", ["email"]), // index for the email. do not remove or modify
 
-    // add other tables here
+    // Admin activity logs
+    adminLogs: defineTable({
+      timestamp: v.string(),
+      action: v.string(),
+      details: v.string(),
+      status: v.string(),
+      ip: v.optional(v.string()),
+    }).index("by_timestamp", ["timestamp"]),
 
-    // tableName: defineTable({
-    //   ...
-    //   // table fields
-    // }).index("by_field", ["field"])
+    // Visitor logs
+    visitorLogs: defineTable({
+      timestamp: v.string(),
+      ip: v.optional(v.string()),
+      userAgent: v.optional(v.string()),
+      page: v.optional(v.string()),
+      location: v.optional(
+        v.object({
+          city: v.string(),
+          region: v.string(),
+          country: v.string(),
+        }),
+      ),
+    }).index("by_timestamp", ["timestamp"])
   },
   {
     schemaValidation: false,
